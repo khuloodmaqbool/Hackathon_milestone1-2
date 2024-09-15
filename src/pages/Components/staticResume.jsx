@@ -18,6 +18,7 @@ export const Milestone1 = () => {
             <div id="content" className="resumediv mb-10 mt-8 flex justify-center rounded-lg border-2 mx-auto w-4/5 max-w-full md:max-w-4xl lg:max-w-5xl background_col">
                 <div className="left bg-black text-white p-7 rounded-l-lg">
                     <div className="flex justify-center items-center rounded-full bg-slate-100 mb-12 border-2 border-slate-100 w-20 h-20 tablet:w-28 tablet:h-28 desktop:w-48 desktop:h-48 mx-auto">
+                      
                         <img className="mx-auto w-full h-full rounded-full object-cover" src="resumepic.jpg" alt="Profile" />
                     </div>
 
