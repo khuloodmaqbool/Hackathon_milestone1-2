@@ -3,6 +3,7 @@ import { MdLocalPhone } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { TiLocation } from "react-icons/ti";
+import Image from "next/image";
 
 export const Milestone1 = () => {
 
@@ -15,12 +16,22 @@ export const Milestone1 = () => {
 
     return (
         <>
+            {/* Name  */}
             <div id="content" className="resumediv mb-10 mt-8 flex justify-center rounded-lg border-2 mx-auto w-4/5 max-w-full md:max-w-4xl lg:max-w-5xl background_col">
                 <div className="left bg-black text-white p-7 rounded-l-lg">
+
+                    {/* Profile Picture  */}
                     <div className="flex justify-center items-center rounded-full bg-slate-100 mb-12 border-2 border-slate-100 w-20 h-20 tablet:w-28 tablet:h-28 desktop:w-48 desktop:h-48 mx-auto">
-                      
-                        <img className="mx-auto w-full h-full rounded-full object-cover" src="resumepic.jpg" alt="Profile" />
+                        <Image
+                            className=" mx-auto w-full h-full rounded-full object-cover"
+                            src="/resumepic.jpg"
+                            alt="profile"
+                            width={500}
+                            height={300}
+                            priority
+                        />
                     </div>
+
 
                     {/* About Section  */}
                     <h2 className={`${resumeSubHeading} bg-black`}>About Me</h2>
@@ -81,6 +92,7 @@ export const Milestone1 = () => {
                 <div className="right p-5">
                     <h2 className="bg-primary-color text-white text-center text-LG  tablet:text-4xl laptop:text-6xl desktop:text-6xl  py-4 rounded-3xl">Khulood Maqbool</h2>
                     <h2 style={{ fontFamily: "Dancing Script" }} className='font-bold text-center text-lg mb-6 mt-2 tablet:text-3xl laptop:text-5xl'>Front End Developer</h2>
+                   
                     {/* Education Section  */}
                     <h2 className={`${resumeSubHeading} bg-primary-color`}>Education</h2>
                     <ul>
@@ -111,6 +123,7 @@ export const Milestone1 = () => {
                             <button className="bg-slate-400 p-3 rounded-lg text-white my-3 bg-gradient-to-r from-blue_col via-purple_col to-pink_col" onClick={() => setHideSkill(true)}>Hide Skills</button>
                         </>
                     )}
+                    
                     {/* Experience Section  */}
                     <h2 className={`${resumeSubHeading} bg-primary-color`}>Experience</h2>
                     <div className="flex flex-col">
